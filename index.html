@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+  <title>Final Project</title>
+</head>
+<body>
+  <div class="page_content" id="page_content">
+    <div class="upper_body">
+      <div class="sidebar">
+        <button class="menu-button" onclick="toggleNav()">Menu</button>
+        <div class="navigation" id="navigation">
+          <img src="images/photo_2023-04-17 12.52.27.jpeg" alt="Personal photo" class="my_photo" id="my_photo"  onclick="showPreview('images/photo_2023-04-17 12.52.27.jpeg')">
+          <div class="nav"><p class="nav_link" onclick="openNav()">More...</p></div>
+          <nav class="navbar" id="navbar">
+            <p style='margin: 0' class="nav_link" onclick="closeNav()">Hide...</p>
+            <a class="nav_link" href="index.html">
+              Main info
+            </a>
+            <a class="nav_link" href="pages/skills.html">
+              Skills
+            </a>
+            <a class="nav_link" href="pages/certificates.html">
+              Certificates
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="main" id="main">
+          <header class="header"><h1 style="color: #333">Aizhan Token</h1></header>
+          <p style="color: #333"> A young specialist with work and research experince!</p>
+          <div class="main_content">
+        
+            <div class="about_me">
+              <h3 class="about_me__title">About me</h3>
+              <p class="about_me_text">I am a senior student at Nazarbayev University pursuing a Bachelors Degree in Biological Sciences.</p>
+            </div>
+        
+            <div class="education">
+              <h3 class="about_me__title">Work experience</h3>
+              <div class="experience_card">
+                <div class="experience_card_header">
+                  <p class="experience_position">Co-Founder of Lingdom</p>
+                  <p class="experience_dates">May 2021 - present</p>
+                </div>
+                  <p class="experience_company" onclick="openLink('https://www.instagram.com/lingdom.online/?igshid=YmMyMTA2M2Y%3D')">Online English School</p>
+                  <ul class="experience_jobs">
+                    <li>Created school branding and maintained the Instagram account</li>
+                    <li>Created courses and prepared lesson material</li>
+                    <li>Recruited and taught teachers</li>
+                    <li>Had more than 30 active students</li>
+                  </ul>
+              </div>
+              <div class="experience_card">
+                <div class="experience_card_header">
+                  <p class="experience_position">Part-time Teacher</p>
+                  <p class="experience_dates">July 2019 - present</p>
+                </div>
+                <p class="experience_company" onclick="openLink('https://premium.skysmart.ru')">SkySmart Online School, Premium Department</p>
+                <ul class="experience_jobs">
+                  <li>Conducted 2749 successful lessons with children, teenagers, and groups of students</li>
+                  <li>Gave lessons to more than 30 students</li>
+                  <li>Prepared for IELTS and State examinations</li>
+                  <li>Helped students get assimilated into English speaking environment</li>
+                  <li>Gave parents feedback on students progress and achievements</li>
+                </ul>
+              </div>
+            </div>
+        
+            <div class="education">
+              <h3 class="about_me__title">Research experience</h3>
+              <div class="experience_card">
+                <div class="experience_card_header">
+                  <p class="experience_position">Researcher</p>
+                  <p class="experience_dates">August 2022 - November 2022</p>
+                </div>
+                  <p class="experience_company" onclick="openLink('https://unglobalcompact.org')">UN Global Compact Network project</p>
+                  <ul class="experience_jobs">
+                    <li>Collected contact points for 274 companies (822 contact leads) operating in the food sector</li>
+                    <li>Used LinkedIn social network to collect contact points for the companies</li>
+                    <li>Used Python programming language and Excel program to organise and keep collected data</li>
+                  </ul>
+              </div>
+              <div class="experience_card">
+                <div class="experience_card_header">
+                  <p class="experience_position">Research Assistant</p>
+                  <p class="experience_dates">January 2022 - August 2022</p>
+                </div>
+                <p class="experience_company" onclick="openLink('https://www.coronanet-project.org')">CoronaNet project</p>
+                <ul class="experience_jobs">
+                  <li>Learned about the health, economic, and social effects of the COVID-19 pandemic to evaluate and classify
+                    government responses</li>
+                  <li>Collected more than 70 policies addressing Coronavirus in Omsk Oblast, Russia</li>
+                  <li>Used Qualtrics software and Shiny R application to enter collected policies in the database</li>
+                  <li>Analysed raw resources provided by Jataware and Overton companies</li>
+                  <li>Performed post-data collection cleaning and validation for more than 100 policies</li>
+                  <li>Integrated more than 100 Kazakhstani Covid-19 government responses from OxCGRT, EURO, JHU, CDC_ITF, and
+                    ACAPS databases</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="education">
+            <h3 class="about_me__title">Education</h3>
+            <div class="education_grid">
+              <div class="education_card">
+                <img src="images/NIS-Photo-1.jpg" class="education_img"/>
+                <div class="education_info">
+                  <p class="education_name">
+                    Nazarbayev Intelectual School
+                  </p>
+                  <p class="education_desc">
+                    Concentration in Physics and Mathematics
+                  </p>
+                </div>
+              </div>
+      
+              <div class="education_card">
+                <img src="images/NU-logo.png" class="education_img"/>
+                <div class="education_info">
+                  <p class="education_name">
+                    Nazarbayev University
+                  </p>
+                  <p class="education_desc">
+                    Bachelor of Science (BSc) in Biological Sciences
+                  </p>
+                  <p class="education_desc">
+                    cGPA: 3.40
+                  </p>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer_info">
+        I appreciate your visit to my online CV. 
+        <br />
+        Looking forward for your feedback.
+      </p>
+      <p class="footer_info"><img class="footer_info_icon" src="icons/location-icon.svg"/>Astana, Kazakhstan</p>
+      <p class="footer_info"><img class="footer_info_icon" src="icons/phone-icon.svg"/><a class="footer_info_link" href="tel:+77770273796">+77770273796</a></p>
+      <p class="footer_info"><img class="footer_info_icon" src="icons/email-icon.svg"/><a class="footer_info_link" href="mailto:aizhan.token@nu.edu.kz">aizhan.token@nu.edu.kz</a></p>
+    </div>
+  </div>
+</body>
+</html>
