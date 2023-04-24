@@ -40,7 +40,6 @@ function openLink(url) {
 }
 
 function toggleNav() {
-  console.log("hello");
   var navbar = document.getElementById("navigation");
   if (navbar.style.display === "flex") {
     navbar.style.display = "none";
